@@ -1,7 +1,8 @@
 /* eslint-disable */
 import React from "react";
 import Typical from "react-typical";
-import "./Profile.css";
+import './Profile'
+import Profile from './Profile';
 
 function Profile() {
   return (

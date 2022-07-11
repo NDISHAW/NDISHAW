@@ -26,31 +26,20 @@
 .primary-text {
     color:var(--white);
 }
-
 .highlighted-text{
     color: var(--dark-orange);
 }
-
 .profile-role-tagline{
     font-size: 19px;
     margin: 5px 0 0 0;
     font-family: "Poppins Light";
 }
-
 .profile-options .highlighted-btn {
     margin: 0 0 0 28px;
+    color: #111;
 }
 .profile-options .highlighted-btn:hover {
     margin: 0 0 0 28px;
     background-color: cornsilk;
     color: #111;
-}
-.profile-picture{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 1px 0px 0px var(--white);
-    height: 380px;
-    width: 380px;
-    margin: 0 0px 0 100px;
 }
