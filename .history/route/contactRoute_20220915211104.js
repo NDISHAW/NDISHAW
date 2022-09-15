@@ -16,13 +16,13 @@ router.post("/contact", (req, res) => {
     port: 465,
     auth: {
       user: "ndichumuriithi@gmail.com",
-      pass: process.env.key,
+      pass: "use-your-correct-password-here",
     },
   });
   let mailOptions = {
     from: data.email,
-    to: "ndichumuriithi@gmail.com",
-    subject: `Message from ${data.name}`,
+    to: "edubabadigital@gmail.com",
+    subject: `message from ${data.name}`,
     html: `
 
             <h3>Informations<h3/>
