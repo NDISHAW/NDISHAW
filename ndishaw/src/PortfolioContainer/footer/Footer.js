@@ -8,6 +8,7 @@ export default function Footer() {
         className="btn-scroll"
         onClick={() => ScrollService.scrollHandler.scrollToHome()}
       >
+        {" "}
         <i className="fa fa-arrow-up"></i>
       </button>
     </div>

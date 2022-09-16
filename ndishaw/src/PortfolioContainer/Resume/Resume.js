@@ -48,47 +48,64 @@ const Resume = (props) => {
     { label: "Education", logoSrc: "education.svg" },
     { label: "Work History", logoSrc: "work-history.svg" },
     { label: "Programming Skills", logoSrc: "programming-skills.svg" },
+    { label: "Softwares", logoSrc: "programming-skills.svg" },
     { label: "Projects", logoSrc: "projects.svg" },
     { label: "Interests", logoSrc: "interests.svg" },
   ];
 
-  //here we have
+  //STATIC RESUME DATA FOR SKILLS
   const programmingSkillsDetails = [
     { skill: "JavaScript", ratingPercentage: 85 },
     { skill: "React JS", ratingPercentage: 85 },
-    // { skill: "React Native", ratingPercentage: 85 },
-    { skill: "Express JS", ratingPercentage: 89 },
-    { skill: "Node JS", ratingPercentage: 89 },
-    // { skill: "Mongo Db", ratingPercentage: 70 },
-    // { skill: "Core Java", ratingPercentage: 80 },
+    { skill: "Ruby", ratingPercentage: 85 },
+    { skill: "PostgreSql", ratingPercentage: 74 },
+    { skill: "MySql", ratingPercentage: 82 },
+    { skill: "Ruby On Rails", ratingPercentage: 85 },
+    { skill: "Express JS", ratingPercentage: 40 },
+    { skill: "Node JS", ratingPercentage: 79 },
     { skill: "HTML", ratingPercentage: 80 },
     { skill: "CSS", ratingPercentage: 80 },
+    { skill: "Visual Basic", ratingPercentage: 50 },
+    { skill: "C ++", ratingPercentage: 40 },
+    { skill: "C ", ratingPercentage: 30 },
+    { skill: "Pascal ", ratingPercentage: 30 },
+  ];
+  //STATIC RESUME DATA FOR SKILLS
+  const Softwares = [
+    { software: "Ms Word", ratingPercentage: 90 },
+    { software: "Ms Excell", ratingPercentage: 95 },
+    { software: "Ms Access", ratingPercentage: 85 },
+    { software: "Git", ratingPercentage: 90 },
+    { software: "GitHub", ratingPercentage: 90 },
+    { software: "VS Code", ratingPercentage: 88 },
+    { software: "Software & H/W Maintenance", ratingPercentage: 60 },
   ];
 
   const projectsDetails = [
     {
       title: "Personal Portfolio Website",
-      duration: { fromDate: "2020", toDate: "2021" },
+      duration: { fromDate: "5th September ", toDate: "15th September 2022" },
       description:
         "A Personal Portfolio website to showcase all my details and projects at one place.",
       subHeading: "Technologies Used: React JS, Bootsrap",
+      liveLink: "https://nyumbani-lime.vercel.app/",
     },
     {
-      title: "Mobile E-shop ",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "An ecommerce application designed to sell products online wth payment system integration",
+      title: "Nyumbani Move ",
+      duration: { fromDate: "15th August ", toDate: "2nd September 2022" },
+      description: "A moving logistics Company Application ",
       subHeading:
-        "Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux.",
+        "Technologies Used:  React , Ruby On Rails, Tailwind, CSS Google Maps Api, Places Api.",
+      liveLink: "https://nyumbani-lime.vercel.app/",
     },
-    {
-      title: "Ecommerce Website ",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
-      subHeading:
-        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
-    },
+    // {
+    //   title: "Ecommerce Website ",
+    //   duration: { fromDate: "2020", toDate: "2021" },
+    //   description:
+    //     "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
+    //   subHeading:
+    //     "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
+    // },
   ];
 
   const resumeDetails = [
@@ -167,17 +184,37 @@ const Resume = (props) => {
         </div>
       ))}
     </div>,
+    /* PROGRAMMING SKILLS */
+    <div
+      className="resume-screen-container programming-skills-container"
+      key="Softwares"
+    >
+      {Softwares.map((software, index) => (
+        <div className="skill-parent" key={index}>
+          <div className="heading-bullet"></div>
+          <span>{software.software}</span>
+          <div className="skill-percentage">
+            <div
+              style={{ width: software.ratingPercentage + "%" }}
+              className="active-percentage-bar"
+            ></div>
+          </div>
+        </div>
+      ))}
+    </div>,
 
     /* PROJECTS */
     <div className="resume-screen-container" key="projects">
       {projectsDetails.map((projectsDetails, index) => (
         <ResumeHeading
+          className="nyumbani-link"
           key={index}
           heading={projectsDetails.title}
           subHeading={projectsDetails.subHeading}
           description={projectsDetails.description}
           fromDate={projectsDetails.duration.fromDate}
           toDate={projectsDetails.duration.toDate}
+          liveLink={projectsDetails.liveLink}
         />
       ))}
     </div>,
@@ -185,12 +222,12 @@ const Resume = (props) => {
     /* Interests */
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
-        heading="Teaching"
-        description="Apart from being a tech enthusiast and a code writer, i also love to teach people what i know simply because i believe in sharing."
+        heading="Novels"
+        description="Apart from being a tech enthusiast and a code writer, i also love to read novels and watching movies."
       />
       <ResumeHeading
         heading="Music"
-        description="Listening to soothing music is something i can never compromise with, skimming through Spotify's pop songs charts is at times the best stress reliever that i can get my hands on."
+        description="Listening to soothing music is something i can never compromise with, music best stress reliever that i can get my hands on."
       />
       <ResumeHeading
         heading="Competitive Gaming"

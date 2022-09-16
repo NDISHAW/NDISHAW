@@ -1,9 +1,8 @@
-import AboutMe from "../PortfolioContainer/AboutMe/AboutMe";
-// import Footer from "../PortfolioContainer/Home/Footer/Footer";
 import Home from "../PortfolioContainer/Home/Home";
+import AboutMe from "../PortfolioContainer/AboutMe/AboutMe";
 import Resume from "../PortfolioContainer/Resume/Resume";
-import Testimonial from '../PortfolioContainer/Testimonial/Testimonial';
-import ContactMe from '../PortfolioContainer/ContactMe/ContactMe';
+import Testimonial from "../PortfolioContainer/Testimonial/Testimonial";
+import ContactMe from "../PortfolioContainer/ContactMe/ContactMe";
 
 export const TOTAL_SCREENS = [
   {
@@ -19,17 +18,13 @@ export const TOTAL_SCREENS = [
     component: Resume,
   },
   {
-    screen_name: "Testimonials",
+    screen_name: "Testimonial",
     component: Testimonial,
   },
   {
     screen_name: "ContactMe",
     component: ContactMe,
   },
-  // {
-  //   screen_name: "Footer",
-  //   component: Footer,
-  // },
 ];
 
 export const GET_SCREEN_INDEX = (screen_name) => {

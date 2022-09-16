@@ -62,9 +62,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      I patronized Ehizeex and when He delivered, I honestly
-                      fell in love with the project He is a very honest guy and
-                      he delivers ontime.
+                      Reviews  are on their way! Watchout for this space! You can review me if you want to. Just Fill in the form below in the contact me section and I will get in touch.
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -98,9 +96,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      It was nice hiring this guy for my e-commerce project.He
-                      delivered even more than i can imagine. I recommend him
-                      for you.
+                      Reviews  are on their way! Watchout for this space! You can review me if you want to. Just Fill in the form below in the contact me section and I will get in touch.
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -133,9 +129,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      When he delivered my job, my head spinned, it was so nice
-                      and he implemented every functionality i requested for.
-                      Thank you.
+                      Reviews  are on their way! Watchout for this space! You can review me if you want to. Just Fill in the form below in the contact me section and I will get in touch.
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -168,9 +162,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      This guy is incredibly awesome, I hired him and when He
-                      delivered, I honestly fell in love with the project. He is
-                      indeed a great guy,
+                      Reviews  are on their way! Watchout for this space! You can review me if you want to. Just Fill in the form below in the contact me section and I will get in touch.
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
