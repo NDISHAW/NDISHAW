@@ -8,7 +8,7 @@
     "server": "nodemon server.js",
     "client": "npm start --prefix ndishaw",
     "dev": "concurrently \"npm run  server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install -f --prefix ndishaw && npm run build --prefix ndishaw"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install  --prefix ndishaw && npm run build --prefix ndishaw"
   },
   "author": "",
   "license": "ISC",
