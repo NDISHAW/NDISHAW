@@ -47,7 +47,8 @@ export default function Testimonial(props) {
     <div>
       <ScreenHeading
         title={"Testimonials"}
-        subHeading={"What My Clients & Friends Say About Me"} />
+        subHeading={"What My Clients & Friends Say About Me"}
+      />
       <section className="testimonial-section fade-in" id={props.id || ""}>
         <div className="container">
           <div className="row">

@@ -47,7 +47,8 @@ export default function Testimonial(props) {
     <div>
       <ScreenHeading
         title={"Testimonials"}
-        subHeading={"What My Clients & Friends Say About Me"} />
+        subHeading={"What My Clients & Friends Say About Me"}
+      />
       <section className="testimonial-section fade-in" id={props.id || ""}>
         <div className="container">
           <div className="row">
@@ -55,7 +56,7 @@ export default function Testimonial(props) {
               className="owl-carousel"
               id="testimonial-carousel"
               {...options}>
-              <div className="col-lg-12">
+              <di3v className="col-lg-12">
                 <div className="testi-item">
                   <div className="testi-comment">
                     <p>
