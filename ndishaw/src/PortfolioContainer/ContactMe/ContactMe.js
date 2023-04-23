@@ -86,21 +86,6 @@ export default function ContactMe(props) {
               ]}
             />
           </h2>{" "}
-          <a href="https://web.facebook.com/?_rdc=1&_rdr">
-            <i className="fa fa-facebook-square" />
-          </a>
-          <a href="#a">
-            <i className="fa fa-google-plus-square" />
-          </a>
-          <a href="https://www.instagram.com/instructor_ehizeex/">
-            <i className="fa fa-instagram" />
-          </a>
-          <a href="https://www.youtube.com/channel/UCSSr5ZDFbilpZ592_ycoAwA">
-            <i className="fa fa-youtube-square" />
-          </a>
-          <a href="https://twitter.com/Ehiedu_baba">
-            <i className="fa fa-twitter" />
-          </a>
         </div>
         <div className="back-form">
           <div className="img-back">
@@ -108,6 +93,13 @@ export default function ContactMe(props) {
             <img src={imgBack} alt="image not found" />
           </div>
           <form onSubmit={submitForm}>
+            <a
+              href="mailto:ndichumuriithi@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <h4>ndichumuriithi@gmail.com</h4>
+            </a>
             <p>{banner}</p>
             <label htmlFor="name">Name</label>
             <input type="text" onChange={handleName} value={name} />
